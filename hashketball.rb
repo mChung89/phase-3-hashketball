@@ -1,4 +1,3 @@
-# Write your code below game_hash
 def game_hash
   {
     home: {
@@ -126,4 +125,29 @@ def game_hash
   }
 end
 
-# Write code here
+def num_points_scored name
+  if game_hash[:home][:players].find {|player| player[:player_name] == name}[:points] != ""
+  return found_player
+else
+  return game_hash[:away][:players].find {|player| player[:player_name] == name}[:points]
+end
+end
+
+def shoe_size
+end
+
+def team_colors
+end
+
+def team_names
+end
+
+def player_numbers
+end
+
+def player_stats
+end
+
+def big_shoe_rebounds
+end
+
